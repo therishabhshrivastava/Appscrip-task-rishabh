@@ -103,7 +103,7 @@ const ProductPage = () => {
 
   return (
     <main id="products-main">
-      
+      <hr />
       <section className="top-section">
         <div className="top-left">
           <p className="item-count mobile">3425 ITEMS</p>
@@ -130,7 +130,7 @@ const ProductPage = () => {
           <Dropdown options={sortOptions} />
         </div>
       </section>
-      
+      <hr />
       <section className="main-section">
         {showFilter && (
           <section className="filter-section">

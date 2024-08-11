@@ -53,6 +53,7 @@ const FilterMenu = ({ title }) => {
           </ul>
         )}
       </div>
+      <hr />
     </>
   );
 };
