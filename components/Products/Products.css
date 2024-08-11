@@ -1,0 +1,323 @@
+#products-main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 96px;
+	padding-right: 96px;
+	margin-top: 2rem;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.top-left {
+	display: flex;
+	align-items: center;
+}
+
+.item-count {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.filter-toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: rotate 0.5s ease-in-out;
+	user-select: none;
+	padding-left: 5rem;
+	gap: 8px;
+}
+
+.filter-text {
+	display: none;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.dropdown {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	position: relative;
+	user-select: none;
+}
+
+.sort-button {
+	display: flex;
+	background: #ffffff;
+	outline: none;
+	border: none;
+	gap: 8px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.dropdown-options {
+	list-style: none;
+	width: 250px;
+	z-index: 2;
+	background: #ffffff;
+	border-radius: 10px;
+	position: absolute;
+	top: 0%;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown-item {
+	display: flex;
+	font-size: 15px;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+.dropdown-item p {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.main-section {
+	width: 100%;
+	margin-top: 24px;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+}
+
+.filter-section {
+	min-width: 280px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	justify-content: flex-start;
+	padding-bottom: 24px;
+}
+
+.custom-checkbox {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+.custom-label {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	gap: 18px;
+}
+
+.product-card {
+	height: auto;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.product-image {
+	height: 399px;
+	width: auto;
+}
+
+.product-image img {
+	object-fit: contain;
+}
+
+.product-info {
+	display: flex;
+	gap: 8px;
+}
+
+.info-content {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+	gap: 8px;
+}
+
+.product-name {
+	font-size: 18px;
+	overflow: hidden;
+	height: 20px;
+	font-weight: 800;
+}
+
+.account-links {
+	opacity: 30%;
+	font-size: 14px;
+}
+
+.account-links a {
+	color: #252520;
+	text-decoration: none;
+}
+
+.like-icon {
+	align-self: flex-end;
+}
+
+.like-icon svg {
+	cursor: pointer;
+}
+
+hr {
+	color: #e5e5e5;
+	opacity: 30%;
+}
+
+.loading {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	place-content: center;
+	font-size: 48px;
+}
+
+/* tablet-responsive */
+@media only screen and (max-width: 950px) {
+	#products-main {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.filter-section {
+		min-width: 220px;
+	}
+
+	.product-image,
+	.product-image img {
+		height: 224px;
+		width: 100%;
+	}
+
+	.product-card {
+		height: auto;
+		width: 230px;
+	}
+
+	.custom-checkbox {
+		width: 18px;
+		height: 18px;
+		cursor: pointer;
+	}
+
+	.custom-label {
+		font-size: 16px;
+		cursor: pointer;
+	}
+	.loading {
+		font-size: 24px;
+	}
+}
+
+/* mobile-responsive */
+@media only screen and (max-width: 600px) {
+	#products-main {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.top-section {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.filter-toggle {
+		display: flex;
+		padding: 0;
+	}
+
+	.filter-text {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.sort-button p {
+		font-size: 14px;
+		font-weight: 800;
+	}
+
+	.sort-button {
+		gap: 2px;
+	}
+
+	.main-section {
+		flex-direction: column;
+	}
+
+	.product-list {
+		gap: 8px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.product-card {
+		height: auto;
+		width: 100%;
+	}
+
+	.product-image,
+	.product-image img {
+		height: 224px;
+		width: 100%;
+	}
+
+	.product-info {
+		gap: 2px;
+	}
+
+	.info-content {
+		font-size: 14px;
+	}
+
+	.product-name {
+		font-size: 14px;
+	}
+
+	.account-links {
+		font-size: 10px;
+	}
+
+	.like-icon {
+		padding-top: 16px;
+		align-self: flex-start;
+	}
+
+	.like-icon svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	hr {
+		color: #e5e5e5;
+		opacity: 30%;
+	}
+
+	.loading {
+		font-size: 18px;
+	}
+}

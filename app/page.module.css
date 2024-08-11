@@ -1,0 +1,32 @@
+.main{
+    min-height: 100vh;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+    max-width: 100%; 
+}
+  
+@media (min-width: 640px) {
+    .container {
+      max-width: 640px; 
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 768px; 
+    }
+}
+  
+@media (min-width: 1024px) {
+    .container {
+      max-width: 1440px; 
+    }
+}
+  
+  
+  
+  
